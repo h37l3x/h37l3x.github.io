@@ -1,0 +1,86 @@
+<section class="section-intro mb-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center intro">
+      <div class="col-md-10">
+        <h1 class="page-title">
+          <a href="http://generate-meme.online/"
+             target="_blank">Generate meme</a>
+        </h1>
+        <p class="page-description">Web app that allows you to create memes or work with images the way you want. For
+          example, resize, crop, add stickers, place text with different styles etc.</p>
+        <a class="go-down"
+           [ngx-scroll-to]="workInfo"
+           ngx-scroll-to-offset="-50"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-overlap mb-5"
+         #workInfo>
+  <div class="container"
+       data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+
+        <div class="row">
+          <div class="col-md-12">
+            <h5>Goal:</h5>
+            <p class="page-text">
+              Create web app to easly create memes
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <img src="/assets/images/research-projects/generate-meme/0.png"
+                 alt=""
+                 class="img-fluid border cursor-pointer"
+                 (click)="openGallery(0)" />
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-8">
+            <img src="/assets/images/research-projects/generate-meme/1.png"
+                 alt=""
+                 class="img-fluid border cursor-pointer"
+                 (click)="openGallery(1)" />
+          </div>
+          <div class="col-md-4">
+            <img src="/assets/images/research-projects/generate-meme/2.png"
+                 alt=""
+                 class="img-fluid border cursor-pointer"
+                 (click)="openGallery(2)" />
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h5>Main functionality:</h5>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>Creating collages with images, text blocks, stickers and other media available</li>
+              <li>Styling text (text size, color, font etc.)</li>
+              <li>Editing images (resize, crop, images combination)</li>
+              <li>Downloading resulting image</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h5>Code technologies I got involved with while working on this project:</h5>
+            <ul class="list-inline skills">
+              <li class="list-inline-item skill"><span class="badge badge-primary">HTML</span></li>
+              <li class="list-inline-item skill"><span class="badge badge-primary">CSS</span></li>
+              <li class="list-inline-item skill"><span class="badge badge-primary">Angular</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<ngx-image-gallery [images]="images"
+                   [conf]="conf"></ngx-image-gallery>
